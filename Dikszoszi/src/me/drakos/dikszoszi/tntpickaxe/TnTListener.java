@@ -17,9 +17,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 
 public class TnTListener implements Listener {
 
@@ -115,7 +113,7 @@ public class TnTListener implements Listener {
                 }
             }
             final ArrayList<Block> blocks = new ArrayList<Block>();
-            if (blockFace.get(player.getName()) == 1) {
+            if (blockFace.get(player) == 1) {
                 blocks.add(mainBlock.getRelative(BlockFace.NORTH_WEST));
                 blocks.add(mainBlock.getRelative(BlockFace.NORTH));
                 blocks.add(mainBlock.getRelative(BlockFace.NORTH_EAST));
@@ -125,7 +123,7 @@ public class TnTListener implements Listener {
                 blocks.add(mainBlock.getRelative(BlockFace.SOUTH));
                 blocks.add(mainBlock.getRelative(BlockFace.SOUTH_EAST));
             }
-            if (blockFace.get(player.getName()) == 2) {
+            if (blockFace.get(player) == 2) {
                 blocks.add(mainBlock.getRelative(BlockFace.UP).getRelative(BlockFace.WEST));
                 blocks.add(mainBlock.getRelative(BlockFace.UP));
                 blocks.add(mainBlock.getRelative(BlockFace.UP).getRelative(BlockFace.EAST));
@@ -135,7 +133,7 @@ public class TnTListener implements Listener {
                 blocks.add(mainBlock.getRelative(BlockFace.DOWN));
                 blocks.add(mainBlock.getRelative(BlockFace.DOWN).getRelative(BlockFace.EAST));
             }
-            if (blockFace.get(player.getName()) == 3) {
+            if (blockFace.get(player) == 3) {
                 blocks.add(mainBlock.getRelative(BlockFace.UP).getRelative(BlockFace.NORTH));
                 blocks.add(mainBlock.getRelative(BlockFace.UP));
                 blocks.add(mainBlock.getRelative(BlockFace.UP).getRelative(BlockFace.SOUTH));
