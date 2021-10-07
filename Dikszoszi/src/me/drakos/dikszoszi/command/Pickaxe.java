@@ -2,6 +2,7 @@ package me.drakos.dikszoszi.command;
 
 import me.drakos.dikszoszi.Main;
 import me.drakos.dikszoszi.menu.ClassMenu;
+import me.drakos.dikszoszi.tntpickaxe.PickaxeItem;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -22,7 +23,7 @@ public class Pickaxe implements CommandExecutor {
         }
         Player p = (Player) commandSender;
 
-        new ClassMenu(p, plugin);
+        p.getInventory().addItem(PickaxeItem.getTnTPickaxe());
         return false;
     }
 }
