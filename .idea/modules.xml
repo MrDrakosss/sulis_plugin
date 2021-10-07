@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dikszoszi/Dikszoszi.iml" filepath="$PROJECT_DIR$/Dikszoszi/Dikszoszi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomCode.iml" filepath="$PROJECT_DIR$/RandomCode.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+name: DikSzoszi
+version: 1.0
+api-version: 1.13
+main: me.drakos.dikszoszi.Main
+
+commands:
+  class:
+  mission:
