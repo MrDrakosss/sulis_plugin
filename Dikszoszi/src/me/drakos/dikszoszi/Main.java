@@ -2,12 +2,14 @@ package me.drakos.dikszoszi;
 
 import me.drakos.dikszoszi.command.Commands;
 import me.drakos.dikszoszi.command.Mission;
+import me.drakos.dikszoszi.command.Pickaxe;
 import me.drakos.dikszoszi.data.PlayerData;
 import me.drakos.dikszoszi.data.PlayerDataManager;
 import me.drakos.dikszoszi.data.PlayerTabName;
 import me.drakos.dikszoszi.mission_data.MissionData;
 import me.drakos.dikszoszi.mission_data.MissionListener;
 import me.drakos.dikszoszi.mission_data.MissionManager;
+import me.drakos.dikszoszi.tntpickaxe.TnTListener;
 import me.drakos.dikszoszi.utils.ConfigManager;
 import me.drakos.dikszoszi.utils.menus.IMenuHandler;
 import me.drakos.dikszoszi.zipline.ZipListener;
@@ -38,6 +40,7 @@ public class Main extends JavaPlugin {
 
         this.getCommand("class").setExecutor(new Commands(this));
         this.getCommand("mission").setExecutor(new Mission(this));
+        this.getCommand("pickaxe").setExecutor(new Pickaxe(this));
 
         new IMenuHandler(this);
         new Listeners(this);
@@ -47,6 +50,7 @@ public class Main extends JavaPlugin {
         new MissionListener(this);
 
         new ZipListener(this);
+        new TnTListener(this);
 
         Bukkit.getConsoleSender().sendMessage(Info.getPrefix() + "§aFinally enable plugin");
 

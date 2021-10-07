@@ -6,3 +6,4 @@ main: me.drakos.dikszoszi.Main
 commands:
   class:
   mission:
+  pickaxe:
